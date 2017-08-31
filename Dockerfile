@@ -20,6 +20,8 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y cmake 
 # adds Python package
 RUN sudo apt-get install -y python
+# install git package
+RUN sudo apt-get install -y git
 # needs Fortran,C, C++
 RUN sudo apt-get install -y gcc g++ gfortran
 RUN sudo apt-get install -y zlib1g-dev 
