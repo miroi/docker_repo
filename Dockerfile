@@ -18,8 +18,6 @@ RUN sudo dpkg --configure -a
 # needs CMake (some problems with this package)
 RUN sudo apt-get update
 RUN sudo apt-get install -y cmake 
-# installs bash package
-RUN sudo apt-get install -y bash
 # adds Python package
 RUN sudo apt-get install -y python
 # needs Fortran,C, C++
