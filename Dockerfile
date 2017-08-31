@@ -19,6 +19,8 @@ RUN sudo dpkg --configure -a
 RUN sudo apt-get update
 #RUN sudo apt-cache search cmake
 RUN sudo apt-get install -y cmake 
+# add Python package
+RUN sudo apt-get install -y Python
 # needs Fortran,C, C++
 RUN sudo apt-get install -y gcc g++ gfortran
 RUN sudo apt-get install -y zlib1g-dev 
