@@ -17,8 +17,9 @@ RUN rm -rf /var/lib/apt/lists/* && sudo rm /var/cache/apt/archives/lock
 RUN sudo dpkg --configure -a
 # needs CMake (some problems with this package)
 RUN sudo apt-get update
-#RUN sudo apt-cache search cmake
 RUN sudo apt-get install -y cmake 
+# installs bash package
+RUN sudo apt-get install -y bash
 # adds Python package
 RUN sudo apt-get install -y python
 # needs Fortran,C, C++
